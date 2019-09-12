@@ -24,14 +24,14 @@ app.use(express.static(publicDirectoryPath))
 app.get('', (req, res) => {
     res.render('index', {
         title: 'Weather',
-        name: 'Andrew Mead'
+        name: 'Lalaina Ramarivelo'
     })
 })
 
 app.get('/about', (req, res) => {
     res.render('about', {
         title: 'About Me',
-        name: 'Andrew Mead'
+        name: 'Lalaina Ramarivelo'
     })
 })
 
@@ -39,7 +39,7 @@ app.get('/help', (req, res) => {
     res.render('help', {
         title:'Help',
         helpText: 'This is some helpful text.',
-        name: 'Andrew Mead'
+        name: 'Lalaina Ramarivelo'
     })
 })
 
@@ -89,14 +89,14 @@ app.get('/help/*', (req,res)=>{
     res.render('404', {
         title:'404',
         msg:'Help article not found',
-        name: 'Andrew Mead'
+        name: 'Lalaina Ramarivelo'
     })
 })
 app.get('*', (req,res)=>{
     res.render('404', {
         title:'404',
         msg:'404 not found',
-        name: 'Andrew Mead'
+        name: 'Lalaina Ramarivelo'
     })
 })
 app.listen(port, () => {
