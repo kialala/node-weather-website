@@ -15,7 +15,7 @@ weatherForm.addEventListener('submit', (e)=>{
     
     messageOne.textContent = 'loading...'
     messageTwo.textContent= ''
-    fetch(`http://192.168.126.51:3000/weather?address=${location}`)
+    fetch(`/weather?address=${location}`)
     .then(response=> response.json())
     .then(data=>{
         messageOne.textContent=''
